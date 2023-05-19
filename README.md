@@ -1,1 +1,2 @@
-# gh-template-tf-workspaces
+# tf-ws-az-acr
+- instantiates acrs
