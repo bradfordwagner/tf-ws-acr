@@ -46,6 +46,8 @@ spec:
           name: flavor-terraform-template
           template: main
         withItems:
+          - name: prod
+            path: ./environments/prod
           - name: sandbox
             path: ./environments/sandbox
 
