@@ -24,8 +24,7 @@ spec:
         arguments:
           parameters:
           - name: git_ref_type
-            value: tags
-            # value: "{{ inputs.parameters.git_ref_type }}"
+            value: "{{ inputs.parameters.git_ref_type }}"
           - name: git_repo
             value: https://github.com/bradfordwagner/tf-ws-az-acr.git
           - name: git_version
