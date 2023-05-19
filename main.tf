@@ -2,6 +2,10 @@ terraform {
   backend "azurerm" {}
 }
 
+provider "azurerm" {
+  features {}
+}
+
 module "hello_world" {
   source              = "git::https://github.com/bradfordwagner/tf-m-az-acr.git?ref=0.1.0"
   name                = var.name
