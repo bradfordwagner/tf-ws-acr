@@ -41,12 +41,16 @@ spec:
           # path in repository to use as entrypoint
           - name: workspace_path
             value: "{{ item.path }}"
+          - name: tf_action
+            value: "{{ item.tf_action }}"
         templateRef:
           name: flavor-terraform-template
           template: main
         withItems:
           - name: prod
             path: ./environments/prod
+            tf_action: apply
           - name: sandbox
             path: ./environments/sandbox
+            tf_action: destroy
 
